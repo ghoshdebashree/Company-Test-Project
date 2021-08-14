@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequel Logistics Screen ClientSide Login</title>
+  <link rel="icon" type="image/gif/png" href="images/Header_logo_client_site.png">
+ 
+  <!--navbar-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+
+
+  <!--google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  
+  
+  <!--font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+
+<!--body starts-->
+
+<body class="body">
+  <!--nav bar controls -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+       </button>  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li><img src="images/Header_logo_client_site.png" height="50px" width="50px" margin="10px"/></li>
+          <ul class="nav nav-tabs">
+           <li class="nav-item">
+              <a class="nav-link"  href="#">Overview</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Shipment</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Address Book</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Staff</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="#">Invoice</a>
+            </li>
+           <li class="nav-item">
+               <a class="nav-link" href="#">Payment</a>
+           </li>
+           <li class="nav-item">
+              <a class="nav-link" href="#">PC</a>
+           </li>
+          </ul>
+      </ul >
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+           <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <button class="btn btn-dark dropdown-toggle"
+                 type="button"
+                 id="dropdownMenuButton"
+                 data-mdb-toggle="dropdown"
+                 aria-expanded="false"
+                 
+                >
+                Docket No. 
+             </button>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">DOCKET NO : 1</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">DOCKET NO : 2</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">DOCKET NO : 3</a></li>
+            </ul>
+          </li>
+      </ul>
+       
+          <form class="d-flex m-lg-2 ">
+            <input class="form-control ms-auto" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark"> <i class="fas fa-search"></i></button>
+          </form>
+
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+             <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-bell" style="font-size:24px" ></i>
+               <span class="badge rounded-pill badge-notification bg-danger" >0</span>
+             </a>
+             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+               <li><a class="dropdown-item" href="#">Some News</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">Other News</a></li>
+               <li><hr class="dropdown-divider"></li>
+               <li><a class="dropdown-item" href="#">Some other notifications.</a></li>
+             </ul>
+           </li>
+         </ul>
+     
+
+        <ul class="navbar-nav">
+           <li class="nav-item dropdown">
+              <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <input type="image" 
+                src="https://avatars.githubusercontent.com/ghoshdebashree"
+                class="rounded-circle"
+                height="35"
+                />
+             </a>
+              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Debashree Ghosh</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Log out</a></li>
+             </ul>
+            </li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+ 
+ <div class="searchboxes">
+   <div class="container">
+     <div class="row">
+        <div class="col">
+          <p>Pick up address</p>
+       </div>
+       <div class="col">
+          <p>Start Date :</p>
+       </div>
+   
+       <div class="col">
+          <p>Pick up Time</p>
+       </div>
+   
+       <div class="col">
+          <p>Remark</p>
+       </div>
+       <div class="col"></div>
+     </div>
+     
+     <div class="row">
+        <div class="col">
+          <input type="search">
+        </div>
+       <div class="col">
+           <input type="date" id="start" name="date-start" >
+       </div>
+       <div class="col">
+          <input type="search">
+       </div>
+       <div class="col">
+         <input type="search">
+       </div>
+       <div class="col">
+        <button class="btn btn-dark md-2" type="button" area-expanded="false">Request for pickup</button>
+       </div>
+     </div>
+ </div>
+  
+<nav>
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <button class="nav-link" id="nav-today-tab" data-bs-toggle="tab" data-bs-target="#nav-today" type="button" role="tab" aria-controls="nav-today" aria-selected="false">TODAY'S PICKUP</button>
+    <button class="nav-link active" id="nav-pending-tab" data-bs-toggle="tab" data-bs-target="#nav-pending" type="button" role="tab" aria-controls="nav-pending" aria-selected="true">PENDING PICKUP</button>
+    <button class="nav-link" id="nav-intransit-tab" data-bs-toggle="tab" data-bs-target="#nav-intransit" type="button" role="tab" aria-controls="nav-intransit" aria-selected="false">IN-TRANSIT DOCKETS</button>
+    <button class="nav-link" id="nav-delivered-tab" data-bs-toggle="tab" data-bs-target="#nav-delivered" type="button" role="tab" aria-controls="nav-delivered" aria-selected="false">DELIVERED DOCKETS</button>
+    <button class="nav-link" id="nav-cod-tab" data-bs-toggle="tab" data-bs-target="#nav-cod" type="button" role="tab" aria-controls="nav-cod" aria-selected="false">COD</button>
+  </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade " id="nav-today" role="tabpanel" aria-labelledby="nav-today-tab">Today's pickup details ...</div>
+  <div class="tab-pane fade show active" id="nav-pending" role="tabpanel" aria-labelledby="nav-pending-tab">
+   
+    <!--pick up page with table -->
+   <div class="row">
+        <div class="col-md-2">
+            <input type="date" class="form-control" id="reqstart" style="margin-left:20px;">
+        </div>
+        <div class="col-md-2">
+            <input type="date" class="form-control" id="reqend" style="margin-left:20px;">
+        </div>
+        <div class="col">
+           <button class="btn btn-dark" type="button" id="filterdate" >Filter Date</button>
+        </div>
+    </div>
+
+
+  <div class="container table-responsive">    
+      <table 
+          class="table" 
+          id="table"
+          data-detail-view="true"
+          data-detail-view-icon="true"
+          data-detail-view-by-click="true"
+          data-detail-formatter="detailFormatter">
+         <thead>
+             <tr> 
+                <th data-field="reqdate">REQUESTED DATE</th>
+                <th data-field="brn">BRN</th>
+                <th data-field="strcode">STORE CODE</th>
+                <th data-field="add">FORM ADDRESS </th>
+                <th data-field="prdtype">PRODUCT TYPE</th>
+                <th data-field="doc">DOCKETS</th>
+                <th data-field="action">ACTIONS</th>
+             </tr>
+          </thead>
+       </table>
+    </div>    
+  </div>
+  
+  
+    <div class="tab-pane fade" id="nav-intransit" role="tabpanel" aria-labelledby="nav-intransit-tab">In transit Dockets...</div>
+    <div class="tab-pane fade " id="nav-delivered" role="tabpanel" aria-labelledby="nav-delivered-tab">Delivered Dockets...</div>
+    <div class="tab-pane fade " id="nav-cod" role="tabpanel" aria-labelledby="nav-cod-tab">COD details...</div>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.18.3/bootstrap-table.min.js"></script>
+<script src="index.js"></script>
+
+</body>
+
+<!--footer starts -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;2014-<script>document.write(new Date().getFullYear())</script> Sequel Logistics All Rights Reserved</p>
+        </div>
+        <div class="col">
+          <a class="anchorfooter" href="#">Terms of uses</a>
+        </div>
+        <div class="col">
+          <a class="anchorfooter" href="#">Privacy Policy</a>
+        </div>
+        <div class="col">
+          <a class="anchorfooter" href="#">Refund Policy</a>
+        </div>
+        <div class="col">
+          <a class="anchorfooter" href="#">Customer Care: 901 902 4444</a>
+        </div>
+      </div>
+    </div>
+  </footer>  
+</html>

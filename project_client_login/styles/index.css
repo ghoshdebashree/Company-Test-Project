@@ -1,0 +1,80 @@
+
+.main{
+  margin:5% 18% 5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size :1.2em;
+}
+.para{
+  margin-left:5%;
+}
+#dropdownMenuButton {
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px;
+}
+#search{
+  font-family: 'Montserrat', sans-serif;
+  font-size:15px; 
+}
+.formandpic{
+  display:flex;
+  justify-content:space-evenly;
+  margin-top:100px; 
+}
+.picandlogin{
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  padding: 5px;
+}
+#file {
+  display: none;
+}
+#output {
+  object-fit: cover;
+  border-radius:50%;
+  border:1px solid black;
+  height:auto;
+  width:100%; 
+}
+._label {
+  cursor: pointer;
+  position:relative;
+  font-size:18px;
+  color:#B2B1B9;
+  padding:5px; 
+ }
+#datetime{
+font-size:1em;
+padding: 5px;
+}
+.nominate{
+  padding:5px;
+  font-size:20px;
+  color:inherit;
+  text-decoration:none;
+  float:right;
+}
+.headbirthday {
+  text-align:center; 
+}
+.newandanouncements{
+  text-align:center; 
+}
+.headCorousal{
+  text-align:center;    
+}
+footer{
+  background:#B2B1B9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  color:white;
+}
+.anchorfooter{
+  color:inherit;
+  text-decoration:none;
+  font-size: 1em;
+  color:white;
+} 
+.nav-tabs a{
+  margin:0px 20px 0px;
+}
